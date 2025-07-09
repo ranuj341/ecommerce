@@ -1,0 +1,362 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .product img{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+    #featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+        background-color: black;
+    }
+    #featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a{
+        background-color: coral;
+        color: white;
+    }
+    .pagination a {
+        color: black;
+    }
+  </style>
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-1 fixed-top">
+        <div class="container">
+          <img src="image/logo.png" alt="Logo" height="100" width="120">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="project.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <i class="fas fa-search pr-3"></i>
+                <i class="fas fa-shopping-bag"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="featured" class="my-5 py-5">
+        <div class="container mt-5 py-5">
+          <h2 class="font-weight-bold">Our Featured</h2>
+          <hr class="m-2">
+          <p>Here you can check out our new products with fair prices at Anuj's Store</p>
+        </div>
+        <div class="row mx-auto container">
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img onclick="window.location.href='sproduct.html'; " class="mb-3 img-fluid" src="product/nb.jpg" alt="Nike Blazer Mid '77 Vintage" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Nike Blazer Mid '77 Vintage</h5>
+            <h4 class="p-price">$199</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/adilette-aqua-slides.avif" alt="Aqua slide" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Aqua slide</h5>
+            <h4 class="p-price">39$</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/adissage-slides.avif" alt="Sage Slide" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Sage Slide</h5>
+            <h4 class="p-price">$59</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/adUltraboost.avif" alt="Adidas Ultra Boost" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Adidas Ultra Boost</h5>
+            <h4 class="p-price">$99</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/j11.png" alt="Air Jordan 11 High" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Air Jordan 11 High</h5>
+            <h4 class="p-price">$179</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/campus-00s-shoes.avif" alt="Adidas Campus" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Adidas Campus</h5>
+            <h4 class="p-price">$89</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/f50promessi.avif" alt="f50 pro messi boot" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">F50 Pro Messi Boot"</h5>
+            <h4 class="p-price">$115</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/gazelle-indoor-shoes.avif" alt="Gazelle Indoor" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Gazelle Indoor</h5>
+            <h4 class="p-price">$155</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/NIKE+ZOOM+VOMERO+5.png" alt="Nike Zoom Vomero" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Nike Zoom Vomero</h5>
+            <h4 class="p-price">$97</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/nikecity.png" alt="Nike C1ty" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Nike C1ty</h5>
+            <h4 class="p-price">$99</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/predator.avif" alt="Adidas Predator" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Adidas Predator</h5>
+            <h4 class="p-price">$300</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/predatorclubturf.avif" alt="Adidas Predator Club Turf" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Adidas Predator Club Turf</h5>
+            <h4 class="p-price">$100</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/samba.avif" alt="Samba" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Samba</h5>
+            <h4 class="p-price">$89</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/va.webp" alt="Vans" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Vans</h5>
+            <h4 class="p-price">$50</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/vh.jpg" alt="Vans High" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Vans High</h5>
+            <h4 class="p-price">$65</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4">
+            <img src="product/skechersSlip-ins.jpg" alt="Skechers" height="65%" width="110%">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Skechers</h5>
+            <h4 class="p-price">$105</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination mt-5">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <footer class="mt-5 py-5" style="background-color: #000000; color: white;">
+        <div class="container row mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="image/logo.png" alt="Logo" height="60" width="80">
+                <p>We offer a wide range of trendy, comfortable, and high-quality footwear for every style and occasion.</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5>Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Slippers</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5>Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>IBRD, Punarbas, Kanchanpur, Nepal</p>
+                </div>
+    
+                <div>
+                    <h6 class="text-uppercase">Phone No.</h6>
+                    <p>9800000000, 0977-56789</p>
+                </div>
+    
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>Ranuj341@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+              <h5>Instagram</h5>
+             <div class="row">
+              <img class="img-fluid w-25 h-100 m-2" src="insta/2.jpeg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="insta/a.jpeg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="insta/c.avif" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="insta/z.jpeg" alt="">
+             </div>
+          </div>
+        </div>
+        <div class="copyright mt-5">
+          <div class="container mx-auto">
+              <div class="row justify-content-center">
+                
+                  <div class="col-lg-3 col-md-6 col-12 text-center">
+                      <img src="payment/esewa.png" alt="Esewa" style="height: 30px; width: auto; padding: 5px;">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12 text-center">
+                      <img src="payment/mastercard.jpg" alt="Mastercard" style="height: 30px; width: auto; padding: 5px;">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12 text-center">
+                      <img src="payment/visa.webp" alt="Visa" style="height: 30px; width: auto; padding: 5px;">
+                  </div>
+              </div>
+          </div>
+      </div>
+          </div>
+          <p class="mt-3 text-center" style="font-style: italic;">Anuj eCommerce © 2025. All Rights Reserved</p>
+          <div class="d-flex justify-content-center mt-3">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
